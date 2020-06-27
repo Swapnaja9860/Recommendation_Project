@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <head>
+        <title>Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript">
+          function f1()
+          {
+            var a = /^[A-Za-z]+$/;
+            var x=document.getElementById("f_name").value;
+            if(x==="")
+            {
+                alert("You do not entered First name");
+                return false;
+            } 
+            if(x.match(a))
+            true;
+            else
+            {
+                alert("First name must contain only Alphabet");
+                return false;
+            } 
+             
+            var y = document.getElementById("passwords").value;
+            var z = document.getElementById("pass").value;
+            if(y==="")
+            {
+                alert("You do not entered Password");
+                return false;
+            } 
+             if(y.length<5)
+            {
+                alert("Password must contain atleast 5 Character");
+                return false;
+            }    
+            if(y.length>10)
+            {
+                alert("Password must contain less than 10 Character");
+                return false;
+            } 
+            if(y===z)
+            true;
+            else
+            {
+                alert("Renter the Password");
+                return false;
+            } 
+              
+            //var n = /^[0-9]+$/;
+            
+            var d = document.getElementById("mail").value;
+            if(d=="")
+            {
+                alert("you must enter Email-id");
+                return false;
+            }    
+            
+        }
+        </script>
+            
+        <style>
+            fieldset{
+                height:60%;
+                width:28%;
+                background: #535353;
+            } 
+            form{
+                margin: 0px auto;
+                margin-top: 90px;
+            }
+            
+            .field
+            { 
+              display:flex;
+              flex-flow:column-reverse;
+              margin-bottom: 0em;
+            }
+             
+            label,input{
+             transition: all 0.2s;
+             touch-action: manipulation;
+            }
+            input[type=text]{
+              font-size: 1em;
+              border:0;
+              
+              font-family:inherit;
+              -webkit-appearance:none;
+               border-radius:0;
+               padding:0;
+              cursor:text;
+             }
+             input:focus{
+             outline: 0;
+             border-bottom: 0.5px solid #666;
+             }
+             label{
+              text-transform:uppercase;
+              letter-spacing:0.01em; 
+             }
+             input:placeholder-shown + label{
+             cursor:text;
+             max-width:66.66%;
+             white-space:nowrap;
+             overflow:hidden;
+             text-overflow:ellipsis;
+             transform-origin: left bottom;
+             transform: translate(0,2.125rem)
+             scale(1.5);
+            }
+            ::-webkit-input-placeholder{
+              opacity:0;
+              transition: inherit;
+           }
+            input:focus::-webkit-input-placeholder{
+              opacity:1;
+           }
+             input:not(:placeholder-shown)+label,
+             input:focus + label {
+             transform: translate(0,0) scale(1);
+             cursor:pointer;
+              }
+            input{
+                padding: 8px;
+            }
+            input[type=text]
+            {  
+                
+                display:block;
+                margin-left: 55px;
+                margin-bottom: 10px;
+                border: 2px solid black;
+            }
+            input[type=email]
+            {  
+                
+                display:block;
+                margin-left: 55px;
+                margin-bottom: 10px;
+                border: 2px solid black;
+            }
+            input[type=password]
+            {  
+                
+                display:block;
+                margin-left:55px;
+                margin-bottom:10px;
+                border: 2px solid black;
+            }
+             input[type=Phone]
+            {  
+                margin-left: 55px;
+                display:block;
+                margin-bottom: 10px;
+                border:2px solid black;
+            }
+             input[type=button]
+            {  
+                margin-left: 0;
+                margin-bottom: 20px;
+                border: 2px solid black;
+            }
+            
+            input[type="submit"]
+            {  
+                cursor: pointer;
+                border: none;
+                outline: none;
+                height: 40px;
+                background: #1c8adb;
+                color: #fff;
+                font-size: 18px;
+                //border-radius: 20px;
+                
+            }
+        </style>    
+    </head>
+    
+    <style>
+        body{
+            background-image: url(" ");
+            background-repeat: no-repeat;
+            background-size: 1500px 1000px; 
+            background-color:rgb(241, 214, 239);
+           }
+    </style> 
+    
+    
+        <form action="/submit" method="post" onsubmit="return f1()" enctype="multipart/form-data">
+          
+            <center>     
+                <fieldset style="text-align:center"> 
+                    
+            <h1>  <legend style="margin-top:-15px; margin-bottom:-15px ; font-family:sans-serif; color: white;"> <b> CREATE ACCOUNT </legend> </h1>  
+                
+             <div class="field">
+             <input style="width :300px ; height :37px" type="text" placeholder="                 ENTER  FIRST  NAME " name="fname" id="f_name" size="40" >  
+              <label for="f_name" style="font-family:sans-serif; font-size:12px">NAME</label>
+              </div>
+       
+            <div class="field">
+            <input style="width :280px ; height :20px" type="email" placeholder="                 ENTER  EMAIL - ID" name="email" id="mail" size="40">
+            <label for="mail"  style="font-family:sans-serif; font-size:12px">EMAIL ID</label>
+             </div>
+       
+             <div class="field">
+            <input style="width :280px ; height :20px" type="password" placeholder="               ENTER  PASSWORD" name="password" id="passwords" size="40">
+             <label for="passwords"  style="font-family:sans-serif; font-size:12px">PASSWORD</label>
+             </div>
+            
+            <div class="field">
+            <input style="width :280px ; height :20px" type="password" placeholder="              CONFIRM  PASSWORD" name="password" id="pass" size="40">
+             <label for="pass"  style="font-family:sans-serif; font-size:12px"> CONFIRM PASSWORD</label>
+             </div>
+
+           
+           
+                <br>
+                <br>
+                <input type="radio" style="width : 20px; height: 20px; margin-bottom:-200px" name="gender" value="M" >Male &ensp;
+           
+                <input type="radio" style="width : 20px; height: 20px;" name="gender" value="F" >Female &ensp;
+           
+                <input type="radio" style="width : 20px; height: 20px;" name="gender" value="O" >Others
+            
+                <br>
+                <br>
+              
+             
+             <input type="submit" style="width : 320px; height:37 px;" name="submit" value="sign up">
+
+    
+           
+        </center>
+        </fieldset>     
+        
+        </form>
+    
+
+
+  

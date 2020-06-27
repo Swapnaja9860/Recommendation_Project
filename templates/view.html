@@ -1,0 +1,71 @@
+
+<html>
+<head>
+	<title>View Details</title>	
+	<style type="text/css">
+		body{
+			background-color: #ffe6ff;
+		}
+		.in{
+			margin-top: -5%;
+			margin-left: 18%;
+			padding:20px;
+			width:900px;
+			height:600px;
+			background:#4d004d;
+            
+		}
+		.inn{
+			color:white;
+			font-size: 30px;
+			font-style: normal;
+		}
+		.out{
+			margin-top: 5%;
+			padding: 20px;
+			margin-left: 30%;
+			width:600px;
+			height:250px;
+			background:#4d004d;
+			font-size: 20px;
+		}
+		.btn {
+		   	 border: none;
+		    background-color:#D4EDF7;
+		    padding: 14px 28px;
+		    font-size: 16px;
+		    cursor: pointer;
+		    display: inline-block;
+			}
+
+		.btn:hover {background:#ffe6ff;}
+
+		.det{color: black;}
+
+	</style>
+</head>
+<body>
+	
+
+	<div class="in">
+			<center><h1 style="color: white ; font-size:40px;"> {{plce}}</h1></center>
+		       
+		<table cellspacing="20px">
+			<tr>
+				<td><center><img src="{{ url_for('static', filename=image) }}" width="500px" height="300px" /></center></td>
+				<td>
+					<table class="inn">
+						<p style="color: white; font-size: 20px;">{{describe}}</p>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br><br><br>
+		<center>
+			<button onclick="window.location.href='/rate/{{plce}}'" class="btn det" style='color:black ; text-decoration: none;'>Give Rating</button>
+	</center>
+	</div>
+
+	
+</body>
+</html>

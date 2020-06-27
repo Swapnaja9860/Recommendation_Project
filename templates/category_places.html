@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+ 
+  width: 95%;
+  overflow: hidden;
+  background:#4d004d;
+  margin: 20px auto;
+  padding: 20px;
+
+  
+}
+
+.container ul{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+.container ul li{
+	position: relative;
+	list-style: none;
+	float: left;
+	width: 340px;
+	height: 350px;
+	background:#ffe6ff;
+	margin:45px 25px 40px 85px;
+	box-sizing: :border-box;
+	border:solid white;
+	border-color: #ffe6ff;
+}
+.container ul li .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  top:0;
+  background-color:#ffe6ff;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container ul li:hover .overlay {
+  bottom: 0;
+  top: 0;
+  height: 100%;
+}
+
+
+.container ul li:hover
+{
+	box-shadow: 0px 40px 40px rgba(0,0,0,0.5);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.text {
+  float: center;
+  white-space: nowrap; 
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  font-weight: bolder;
+
+}
+
+
+.btn {
+    border: none;
+    background-color:#4d004d;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn:hover {background:black;}
+
+.det{color: white;
+}
+
+</style>
+</head>
+<body bgcolor="#4d004d">
+
+<text style="color: white;"><center> <h1 style="font-size: 35px;margin-top: 30px; margin-bottom: -50px">{{category}}</h1></center></text>
+
+<form action="cult.html">
+<p align="right">
+<input type="submit" value="Cultural" style="width:90px; height:30px; margin-right:30px;margin-top: 0%; background:#ffe6ff ; color:#4d004d ">
+</p>
+</form>
+
+<div class="container">
+<ul>
+  {% for place in places %}    
+<li>
+ 
+<div class="image"><img src="{{ url_for('static', filename=place.image) }}"
+width="339px" height="349px"  / ></div>
+     
+
+
+<div class="overlay">
+   <div class="text">
+              <center style="margin-top: -30px; color:#4d004d">
+             
+             <center><h2 style='color:#4d004d'><B>
+             <br><br><br>{{place.Place}}
+             </center></h2></B>
+   					<br><br><button onclick="window.location.href='/abcde/{{place.Place}}/{{place.image}}'" class="btn det" style='color: white ; text-decoration: none;'>View Details</button>
+   	        </center>
+
+   </div>
+</div>
+  
+</li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 400px;
+  text-align : centre
+  margin: auto;
+  opacity: 0.2;
+}
+
+.container img {vertical-align: middle;}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.container .content {
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgb(77, 74, 74); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+    <div class="container">
+       <img src="{{ url_for('static', filename= image) }}"
+    alt= "notebook" style = "width:50%;"></div> 
+       <h1> {{session['places']}}</h1>
+       {% for place in session['places'] %}
+        {% if place.Place == Place %}
+       <div class= "bottom-left"> {{place.Place}}</div>
+       {% endif %}
+       {% endfor %}
+       
+</div>
+</body>
+</html>

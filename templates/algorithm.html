@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USER DASHBOARD</title>
+	<h1 style="padding-top: 30px;padding-left:500px;font-size: 50px; color: #4d004d;">SKILLANCE</h1>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<meta charset="UTF-8">
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+<form action="dispsearch.php" method="POST" >
+    <div class="search-box">
+        <input class="search-txt" type="text" name="search" placeholder="type to search">
+        <a class="search-btn" name="btn" >
+          <i class="fas fa-search"></i>
+
+
+        </a>
+    </div>
+
+</form>
+
+
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+           <img src="images/cult1.jpg">
+            <p class="captionText">Cultural</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/tech1.jfif">
+            <p class="captionText">Technical</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/cult2.jpeg">
+            <p class="captionText">Cultural</p>
+        </div>
+        <div class="imageHolder">
+           <img src="images/tech2.jpg">
+            <p class="captionText">Technical</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<script src="myscript.js"></script>
+
+	<input type="checkbox" id="menuToggle">
+<label for="menuToggle" class="menu-icon">&#9776;</label>
+
+	<header>
+		<div id="brand">User</div>
+	</header>
+
+<nav class="menu">
+	<ul>
+		<font style="color:white;"><h3><li><a href="wel.php">Profile</a></li>
+		<li><a href="en.php"> Cultural Enrollments</a></li>
+        <li><a href="Ten.php"> Technical Enrollments</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+		<li><a href="aboutus.html">About Us</a></li>		
+	</ul>
+</nav>
+
+<a href="tech.html"><button type="button" id=button1><font style="color:white;"><h1> TECHNICAL </h1></button></style></font></button></a>
+<a href="cult.html"><button type="button"  id=button2><font  style="color:white;"><h1> CULTURAL </h1></button></style></font></button></a>
+<button type="button" id=button3><font  style="color:white;"><a href="logout.php">Logout</a></button></font>
+
+</body>
+</html>
+<html>
+<body>
+<button onclick="window.location.href='/admin/places/{{userid}}'">Collabrative</button>
+<button onclick="window.location.href='/algo/place/{{userid}}'">Matrix Factorisation</button>
+</body>
+</html>

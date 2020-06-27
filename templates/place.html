@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tourist Places</title>
+</head>
+<body>
+    <h3>Recommended places are :</h3>
+    <h2>{{rec}}
+    {{col0}}
+  {{temp}}
+{{it}}</h2>
+    {% for place in places %}
+    <p>
+      <img src="{{ url_for('static', filename=place.image) }}">
+      
+    </p>
+    <p>
+      <b>Category</b>: {{ place.category }}
+    </p>
+    <p>
+        <b>Places</b>: {{ place.Place }}
+    </p>
+    <p>
+      <b>Places</b>: {{ place.PlaceID }}
+  </p>
+{% endfor %}
+
+</body>
+</html>

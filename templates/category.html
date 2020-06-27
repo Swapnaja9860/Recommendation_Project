@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+ 
+  width: 95%;
+  overflow: hidden;
+  background:#4d004d;
+  margin: 20px auto;
+  padding: 20px;
+
+  
+}
+
+.container ul{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+.container ul li{
+	position: relative;
+	list-style: none;
+	float: left;
+	width: 380px;
+	height: 370px;
+	background:#ffe6ff;
+	margin:45px 25px 40px 45px;
+	box-sizing: :border-box;
+	border:solid white;
+	border-color: #ffe6ff;
+}
+.container ul li .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  top:0;
+  background-color:#ffe6ff;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container ul li:hover .overlay {
+  bottom: 0;
+  top: 0;
+  height: 100%;
+}
+
+
+.container ul li:hover
+{
+	box-shadow: 0px 40px 40px rgba(0,0,0,0.5);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.text {
+  float: center;
+  text-align: center;
+  white-space: nowrap; 
+  color: black;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  margin-top:300px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  font-weight: bolder;
+
+}
+
+
+.btn {
+    border: none;
+    background-color:#4d004d;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.container1 {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 5px;
+  right: -10px;
+
+  background-color:black;
+  opacity: 0.4;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 370px;
+  height : 380px;
+  font-size: 20px;
+}
+
+div.polaroid {
+  width: 380px;
+  height: 370px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.contain {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.btn:hover {background:black;}
+
+.det{color: white;
+}
+
+</style>
+</head>
+<body bgcolor="#4d004d">
+
+<text style="color: white;"><center> <h1 style="font-size: 45px;margin-top: 30px; margin-bottom: -50px">Categories</h1></center></text>
+
+<div class="container">
+<ul>
+  {% for place in places %}    
+<li>
+ 
+
+<div class="container1">
+    <a onclick="window.location.href='/trial/{{place.Place}}'" >
+    <img src="{{ url_for('static', filename=place.image) }}" alt="Norway" style="width:385px; height:375px">
+    <div class="text-block">
+      <h4><center style="color:whitesmoke; margin:200px ; font-weight: bolder; font-size: 30px;">{{place.Place}}</center></h4>
+    </div>
+  </a>
+  </div>
+  
+</li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+body{
+			background-color: #ffe6ff;
+		}
+		.in{
+			margin-top: 5%;
+			margin-left: 18%;
+			padding:20px;
+			width:700px;
+			height:500px;
+			background:#4d004d;
+            
+		}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.img-valign {
+  vertical-align: middle;
+  margin-bottom: 0.75em;
+  margin-top: 150px;
+  margin-left: 150px;
+  padding-right: 50px;
+}
+.col
+{
+  font-family:sans-serif;
+  color: #ffe6ff;
+}
+.text2 {
+  margin-top: 50px;
+  
+  font-size: 44px;
+
+}
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 30px; margin: 10px; color: #ffe6ff ; font-family:sans-serif}
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+</style>
+</head>
+ 
+
+<form action="trial_front.html">
+  <p align="right">
+  <input type="submit" value="logout" style="width:90px; height:30px; margin-right:30px;margin-top: 0%; background:#ffe6ff ; color:#4d004d ">
+  </p>
+  </form>
+<div class="in">
+<table cellspacing="10px" border="0epm" width=700px height=500px>
+ <tr margin-top=5%>
+    <td>
+	
+    {% for place in session['places'] %}
+        {% if place.Place == Place %}
+			 
+                   <img class="img-valign" src="{{url_for('static', filename= place.image)}}" alt="" height="280px" width="330px"  style="margin:0 auto"/>               
+
+	</td>
+	
+	
+	<td>
+      <h1>{{place.Place}}</h1>
+      <div class = "col">
+			<p style="font-size:19px; margin-top:30px">{{place.category}}</p>
+            <p style="font-size:25px"> Have you visited?</p>
+			<p style="font-size:17px">	Please rate to get recommendation:-
+        <form action = "/data/{{place.Place}}" method="POST">
+				<fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+   
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+   
+    <input type="radio" id="star1" name="rating" value="1"/><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    
+    
+</fieldset>
+<div>
+
+			</p>
+            
+            <br><br> 
+            <br>
+            
+            <input class="button button2" type="submit" name="submit" value="submit"><br><br>  
+			      </form>
+			
+			
+		</aside>
+
+	</td>
+
+</tr>
+</table>
+
+{% endif %}
+{% endfor %}
+</div>
+</body>
+</html>

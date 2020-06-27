@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 341px;
+  height: 299px;
+  transition: .5s ease;
+  margin-right: -5px;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text1 {
+  float: center;
+  white-space: nowrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  font-weight: bolder;
+
+}
+.text {
+  background-color: rgb(159, 170, 160);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+body{
+			background-color:#4d004d;
+    }
+    
+</style>
+</head>
+<body>
+<center><h1 style="color: white ; font-size:50px; margin: 60px;">Places In Pune</h1></center>
+
+{% for place in places %}
+    <div class="container">
+        <button  border=0epm onclick="window.location.href='/algo2/plc/{{place.PlaceID}}'" style="float: left; width: 23.5%; margin-right:0.3%; margin-left:0.7%; margin-bottom:0.7%; margin-bottom: 0.7%;">
+        <img class="image" src="{{ url_for('static', filename=place.image) }}" alt="Avatar"  ></button>
+        
+        
+    </div>
+    </div>
+{% endfor %}
+<p style="clear: both;"></p>
+</body>
+</html>

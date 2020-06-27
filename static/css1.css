@@ -1,0 +1,391 @@
+* { padding: 0; margin: 0;}
+body{ 
+  background-color: #ffe6ff;
+     padding: 10px 0 0 0;
+    margin: 0;
+    font-family: sans-serif; }
+a{ text-decoration: none; color: white; }
+li{ list-style-type: none; }
+
+
+
+header{
+
+        width: 100%;
+         height:50px;
+         margin:auto;
+         border-bottom: 1px solid #EEE;
+
+}
+ #brand{
+     position: fixed;
+    top:20px;
+    left: 60px;
+    float: left;
+    line-height: 50px;
+    color:#4d004d;
+    font-size:25px;
+    font-weight: bolder;
+ }
+
+nav { width:100%; text-align:center;}
+nav a{
+    display:block;
+    padding:15px 0;
+    border-bottom: 1px solid black;
+}
+nav a:hover {background: #4d004d; color: white;}
+nav li:last-child a { border-bottom: none; }
+/*-----------------------------------------*/
+
+.menu{
+    width: 240px;
+    height:100%;
+    position: fixed;
+    top:70px;
+    background: black;
+    left:-240px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.menu-icon{
+      position: fixed;
+    top:20px;
+    padding: 10px 20px;
+    background:#ffe6ff;
+    color:  solid black;
+    cursor: pointer;
+    float: left;
+    float: top;
+
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+#menuToggle { display: none; }
+
+#menuToggle:checked  ~  .menu { position: absolute; left:0; }
+
+
+
+
+.galleryContainer{
+    width: 60%;
+    height: 500px;
+    max-width: 700px;
+    position: absolute;
+    left: 280px;
+    top:130px;
+    padding-left: 0px;
+    padding-right: 100px;
+    padding-top: 100px;
+    margin: auto;
+    user-select: none;
+    box-shadow: 0px 0px 3px 1px #00000078;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.galleryContainer .slideShowContainer{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.galleryContainer .slideShowContainer #playPause{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url(images/play.png);
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-size: cover;
+    margin: 5px;
+    cursor: pointer;
+}
+.galleryContainer .slideShowContainer #playPause:hover{
+    opacity: .7;
+}
+.galleryContainer .slideShowContainer .imageHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+}
+.galleryContainer .slideShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+.galleryContainer .slideShowContainer .imageHolder .captionText{
+    display: none;
+}
+
+.galleryContainer .slideShowContainer .leftArrow,.galleryContainer .slideShowContainer .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.galleryContainer .slideShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.galleryContainer .slideShowContainer .leftArrow:hover,.galleryContainer .slideShowContainer .rightArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+}
+.galleryContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.galleryContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.galleryContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+
+
+.galleryContainer .slideShowContainer>.captionTextHolder{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.galleryContainer .slideShowContainer>.captionTextHolder>.captionText{
+    margin: 0;
+}
+
+.galleryContainer #dotsContainer{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.galleryContainer #dotsContainer .dots{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: #bbb;
+    cursor: pointer;
+    transition:background-color 0.5s;
+}
+.galleryContainer #dotsContainer .dots:first-child{
+    margin-left: 0;
+}
+.galleryContainer #dotsContainer .dots:hover,.galleryContainer #dotsContainer .dots.active{
+    background-color: #717171;;
+}
+
+
+
+
+.galleryContainer .moveLeftCurrentSlide{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+
+}
+.galleryContainer .moveLeftNextSlide{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveLeftCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: -100%;opacity: 1;}
+}
+@keyframes moveLeftNext {
+    from {margin-left: 100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+
+
+.galleryContainer .moveRightCurrentSlide{
+    animation-name: moveRightCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+.galleryContainer .moveRightPrevSlide{
+    animation-name: moveRightPrev;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+}
+@keyframes moveRightCurrent {
+    from {margin-left: 0;opacity: 1;}
+    to {margin-left: 100%;opacity: 1;}
+}
+@keyframes moveRightPrev {
+    from {margin-left: -100%;opacity: 1;}
+    to {margin-left: 0%;opacity: 1;}
+}
+.slideTextFromBottom {
+    animation-name: slideTextFromBottom;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromBottom {
+    from {opacity: 0;margin-top: 100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+.slideTextFromTop {
+    animation-name: slideTextFromTop;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+}
+@keyframes slideTextFromTop {
+    from {opacity: 0;margin-top: -100px}
+    to {opacity: 1;margin-top: 0px;}
+}
+
+
+
+#button1{
+position: absolute;
+    left: 1100px;
+    top:180px;
+width:180px;
+height:100px;
+background-color:#4d004d;
+border-width:5px;
+border-color : black;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+}
+
+#button2{
+position: absolute;
+    left: 1100px;
+    top:400px;
+width:280px;
+height:200px;
+background-color:#4d004d;
+border-width:5px;
+border-color : black;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+
+}
+#button2:hover{
+   box-shadow: 15px 15px 10px rgba(0,0,0,0.8);
+   cursor: pointer;
+}
+
+
+#button1:hover{
+   box-shadow: 15px 15px 10px rgba(0,0,0,0.8);
+   cursor: pointer;
+}
+#button3:hover{
+   cursor: pointer;
+}
+
+#button3{
+position:absolute;
+top:5px;
+right:5px;
+width:100px;
+height:50px;
+background-color:#4d004d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.search-box{
+    position: absolute;
+  
+  padding-left:400px;
+  left: 300px;
+  top: 60px;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.search-box:hover > .search-txt{
+    width:240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+    background:white;
+}
+
+.search-btn{
+    color:#4d004d ;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    transition:0.4s;
+}
+
+.search-txt{
+    border:none;
+    background:none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height:40px;
+    width:0px;
+}
+

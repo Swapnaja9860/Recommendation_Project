@@ -1,0 +1,96 @@
+<style>
+#button1{
+position: absolute;
+    left: 1100px;
+    top:180px;
+width:180px;
+height:100px;
+background-color:#4d004d;
+border-width:5px;
+border-color : black;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+}
+
+#button2{
+position: absolute;
+    left: 1100px;
+    top:400px;
+width:280px;
+height:200px;
+background-color:#4d004d;
+border-width:5px;
+border-color : black;
+box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+
+}
+#button2:hover{
+   box-shadow: 15px 15px 10px rgba(0,0,0,0.8);
+   cursor: pointer;
+}
+
+
+#button1:hover{
+   box-shadow: 15px 15px 10px rgba(0,0,0,0.8);
+   cursor: pointer;
+}
+ </style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>USER DASHBOARD</title>
+	<h1 style="padding-top: 30px;padding-left:500px;font-size: 50px; color: #4d004d;">Popular places</h1>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css1.css') }}" >
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+<form action="/search" method="POST" >
+        <div class="search-box">
+            <input class="search-txt" type="text" name="search" placeholder="type to search">
+            <a class="search-btn" name="btn" >
+              <i class="fas fa-search"></i>
+    
+    
+            </a>
+        </div>
+    
+</form>
+
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+           <button onclick="window.location.href='/trial/Shopping Malls'"><img src="{{ url_for('static', filename='images/amanora_mall.jpg') }}">
+           </button><p class="captionText">Amanora Mall</p>
+        </div>
+        <div class="imageHolder">
+            <img src="{{ url_for('static', filename='images/malshej_ghat.jpg') }}">
+            <p class="captionText">Malshej Dam</p>
+        </div>
+        <div class="imageHolder">
+            <img src="{{ url_for('static', filename='images/iskcon_nvcc_temple.jpg') }}">
+            <p class="captionText">Iskcon Temple</p>
+        </div>
+        <div class="imageHolder">
+           <img src="{{ url_for('static', filename='images/okayama_garden.jpg') }}">
+            <p class="captionText">Okayama Garden</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<script src="{{ url_for('static', filename='myscript.js') }}"></script>
+
+<div>
+    <a onclick="window.location.href='/trial1'"><button type="button" style="width:300px;height:200; " id=button1><font style="color:white;"><h1> Explore different categories </h1></button></style></font></button></a>
+    <br><br><a onclick="window.location.href='/algo/{{userid}}'"><button type="button"  style="width:300px;height:200;margin: 50px;" id=button2><font  style="color:white; "><h1> Get Recommendations </h1></button></style></font></button></a>
+</div>
+</body>
+</html>

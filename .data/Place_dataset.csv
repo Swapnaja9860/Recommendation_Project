@@ -1,0 +1,276 @@
+PlaceID,category,Place,image
+0,Nature & Parks,Saras Baugh,saras_baugh.jpg
+1,Nature & Parks,Western Ghats,western_ghat.jpg
+2,Nature & Parks,Malshej Ghats,malshej_ghat.jpg
+3,Nature & Parks,Pune Okayama Friendship Garden,okayama_garden.jpg
+4,Nature & Parks,Pawna Lake,pawna_lake.jpg
+5,Nature & Parks,Mulshi Dam,mulshi-dam.jpg
+6,Nature & Parks,Lonavala Lake,lonavala_lake.jpg
+7,Nature & Parks,Gram Sanskruti Udyan Village Park,gram_sanskruti_udyan.jpg
+8,Nature & Parks,Khadakwasla Dam,khadakwasla_dam.jpg
+9,Nature & Parks,Osho Teerth Park,osho_teerth_park.jpg
+10,Nature & Parks,Taljai Hill,taljai_hill.jpg
+11,Nature & Parks,Rajiv Gandhi Zoological Park,rajiv_gandhi_zoological_park.jpg
+12,Nature & Parks,Bhimashankar Wildlife Sanctuary,bhimashankar.jpg
+13,Nature & Parks,Vetal Hill,vetal_hill.jpg
+14,Nature & Parks,Devkund Waterfall,devkund_waterfall.jpg
+15,Nature & Parks,Kasarsai Dam,kasarsai_dam.jpg
+16,Nature & Parks,Koregaon Park,koregaon-park.jpg
+17,Nature & Parks,Kamla Nehru Park,kamala-nehru-park.jpg
+18,Nature & Parks,SkyHigh Playtorium,skyhigh_playtourim.jpg
+19,Nature & Parks,Madhe Ghat,madhe_ghat.jpg
+20,Nature & Parks,Dive Ghat Valley,dive_ghat_valley.jpg
+21,Nature & Parks,Khandi Waterfalls,khandi_waterfalls.jpg
+22,Nature & Parks,Pashan Lake,pashan_lake.jpg
+23,Nature & Parks,Pavna River,pavana_river.jpg
+24,Nature & Parks,Peshwe Udyan Zoo,peshwa_udyan_zoo.jpg
+25,Nature & Parks,Bhatghar Dam,bhatghar_dam.jpg
+26,Nature & Parks,Seven Wonders Dream Park,seven_wonders_dream_park.jpg
+27,Nature & Parks,Empress Gardens,empress_garden.jpg
+28,Nature & Parks,Mughal Garden,mughal_garden.jpg
+29,Nature & Parks,Dighi Hills,dighi_hills.jpg
+30,Nature & Parks,Junnar Caves,junnar_caves.jpg
+31,Shopping,Phoenix Market City,pheonix_marketcity.jpg
+32,Shopping,Amanora Mall,amanora_mall.jpg
+33,Shopping,Seasons Mall,seasons_mall.jpg
+34,Shopping,CityZest,cityzest.jpg
+35,Shopping,Tulsi Baug Shopping Market,tulshibaug.jpg
+36,Shopping,Sgs Mall,sgs_mall.jpg
+37,Shopping,The Pavillion,the_pavillion.jpg
+38,Shopping,Kumar Pacific Mall,kumar_pacific_mall.jpg
+39,Shopping,Inorbit,inorbit_mall.jpg
+40,Shopping,The Bombay Store Pune,bombay_store_pune.jpg
+41,Shopping,Raw Adventure Solutions,raw_adventure_solutions.jpg
+42,Shopping,Pratha - The Jewellery Studio,pratha_the_jewellery_studio.jpg
+43,Shopping,Phule Market,phule_market.jpg
+44,Shopping,Studio Coppre,studio_copper.jpg
+45,Shopping,Nitesh HUB - Shopping mall in Pune,nitesh_hub.jpg
+46,Shopping,Ishanya Mall,ishanya_mall.jpg
+47,Shopping,Studio Kaleido,studio_kaleido.jpg
+48,Shopping,Inorbit Mall,inorbit_mall.jpg
+49,Shopping,RANJNA,Ranjna.jpg
+50,Shopping,Karagiri,karagiri.jpg
+51,Shopping,Jewel Square Mall,jewel_square_mall.jpg
+52,Shopping,Hong Kong Lane,jewel_square_mall.jpg
+53,Shopping,Royale Heritage Mall,royale_heritage_mall.jpg
+54,Shopping,Art2Day Gallery,art2D_gallery.jpg
+55,Shopping,S Mall,s_mall.jpg
+56,Shopping,Rightwood,rightwood.jpg
+57,Shopping,Deep cloth stores,clover_center.jpg
+58,Shopping,Clover Center,clover_center.jpg
+59,Shopping,Anandi Shopping Centre,clover_center.jpg
+60,Shopping,Lifestyle Mall,lifestyle_mall.jpg
+61,Dams,Mulshi Dam,mulshi-dam.jpg
+62,Dams,Khadakwasla Dam,khadakwasla_dam.jpg
+63,Dams,Osho Teerth Park,osho_teerth_park.jpg
+64,Dams,Kasarsai Dam,kasarsai_dam.jpg
+65,Dams,Bhatghar Dam,bhatghar_dam.jpg
+66,Dams,Pimpalgaon Joga Dam,pimpalgoan_joga_dam.jpg
+67,Dams,Temghar Dam,temghar_dam.jpg
+68,Dams,Varasgaon Dam,varasgaon_dam.jpg
+69,Dams,Bhama Askhed Dam,bhama_askhed_dam.jpg
+70,Dams,Yedgaon Dam,yedagoan_dam.jpg
+71,Dams,Manikdoh Dam,manikodh_dam.jpg
+72,Dams,Thokarwadi Dam,thokarwadi-dam.jpg
+73,Dams,Andra Valley Dam,andra_valley_dam.jpg
+74,Sights & Landmarks,National Defence Academy,National_Defence_ Academy.jpg
+75,Sights & Landmarks,Dagadusheth Halwai Ganapati Temple,ganpati-temple.jpeg
+76,Sights & Landmarks,Rajgad Fort,rajgad_fort.jpg
+77,Sights & Landmarks,ISKCON NVCC Temple,iskcon_nvcc_temple.jpg
+78,Sights & Landmarks,Ranjangaon Ganpati Temple,ranjangaon_temple.jpg
+79,Sights & Landmarks,Narayani Dham Temple,narayani-dham-temple.jpg
+80,Sights & Landmarks,Katraj Jain Temple,katraj-jain-temple.jpg
+81,Sights & Landmarks,Sri Balaji Mandir,Shri_Balaji_Temple.jpg
+82,Sights & Landmarks,Sarasbaug Ganpati Temple,SarasbaugGanpatiMandir.jpg
+83,Sights & Landmarks,Chaturshrungi Temple,chatushrungi_temple.jpg
+84,Sights & Landmarks,Bhuleshwar Temple,bhuleshwar_temple.jpg
+85,Sights & Landmarks,Sinhagad Fort,Sinhagarh_Fort.jpg
+86,Sights & Landmarks,University of Pune,University_of_Pune.jpg
+87,Sights & Landmarks,Parvati Temple,parvati-temple.jpg
+88,Sights & Landmarks,Pataleshwar Cave Temple,Pataleshwar_cave_temple.jpg
+89,Sights & Landmarks,Laxmi Road,laxmi_road.jpg
+90,Sights & Landmarks,Shri Satya Sai Pandurang Kshetra,shri-satya-sai-pandurang.jpg
+91,Sights & Landmarks,Torna Fort,torna_fort.jpg
+92,Sights & Landmarks,Shree Chintamani Temple,shri_chinatmani_temple.jpg
+93,Sights & Landmarks,Gram Sanskruti Udyan Village Park,gram_sanskruti_udyan.jpg
+94,Sights & Landmarks,Aga Khan Palace,aga_khan_palace.jpg
+95,Sights & Landmarks,Kirkee War Cemetery,"Kirkee_War_Cemetery,_Pune.jpg"
+96,Sights & Landmarks,BAPS Shri Swaminarayan Mandir,BAPS_mandir.jpg
+97,Sights & Landmarks,Visapur Fort,visapur-fort.jpg
+98,Sights & Landmarks,Saras Baug,saras_baugh.jpg
+99,Sights & Landmarks,Baneshwar Temple,Baneshwar_temple.jpg
+100,Sights & Landmarks,Shaniwar Wada,shaniwar-wada-pune.jpg
+101,Sights & Landmarks,Neelkantheshwar,neelkantehwar.jpg
+102,Sights & Landmarks,Morgaon Mayureshwar Temple,morgaon-mayureshwar-temple.jpg
+103,Sights & Landmarks,Sant Dnyaneshwar's Samadhi Mandir,sant-dnyaneshwar-samadhi.jpg
+104,Sacred & Religious Sites,Dagadusheth Halwai Ganapati Temple,ganpati-temple.jpeg
+105,Sacred & Religious Sites,ISKCON NVCC Temple,iskcon_nvcc_temple.jpg
+106,Sacred & Religious Sites,Katraj Jain Temple,katraj-jain-temple.jpg
+107,Sacred & Religious Sites,Sri Balaji Mandir,Shri_Balaji_Temple.jpg
+108,Sacred & Religious Sites,Sarasbaug Ganpati Temple,SarasbaugGanpatiMandir.jpg
+109,Sacred & Religious Sites,Chaturshrungi Temple,chatushrungi_temple.jpg
+110,Sacred & Religious Sites,Bhuleshwar Temple,bhuleshwar_temple.jpg
+111,Sacred & Religious Sites,Parvati Temple,parvati-temple.jpg
+112,Sacred & Religious Sites,Pataleshwar Cave Temple,Pataleshwar_cave_temple.jpg
+113,Sacred & Religious Sites,Shri Satya Sai Pandurang Kshetra,shri-satya-sai-pandurang.jpg
+114,Sacred & Religious Sites,BAPS Shri Swaminarayan Mandir,BAPS_mandir.jpg
+115,Sacred & Religious Sites,Baneshwar Temple,Baneshwar_temple.jpg
+116,Sacred & Religious Sites,Morgaon Mayureshwar Temple,morgaon-mayureshwar-temple.jpg
+117,Sacred & Religious Sites,Sant Dnyaneshwar's Samadhi Mandir,sant-dnyaneshwar-samadhi.jpg
+118,Sacred & Religious Sites,Jangali Maharaj Temple,jangali-maharaj-temple.jpg
+119,Sacred & Religious Sites,Ramdara Mandir,ramdara-temple.jpg
+120,Sacred & Religious Sites,Moreshwer Ganesh Mandir Temple,moreshwar_ganesh_mandir.jpg
+121,Sacred & Religious Sites,Shri Wagheshwar Temple,shri_wagheshwar_temple.jpg
+122,Sacred & Religious Sites,Ghoradeshwar Temple,ghordeshwar_temple.jpg
+123,Sacred & Religious Sites,Lord Ayyappa Temple,lord_ayyapa_temple.jpg
+124,Sacred & Religious Sites,Shree Moreshwar Temple,shree-moreshwar-temple.jpg
+125,Sacred & Religious Sites,Shree Krishna Mandir,shree-krishna-temple.jpg
+126,Sacred & Religious Sites,Trishundha Ganpati Temple,trishundha_ganpati.jpg
+127,Sacred & Religious Sites,Shri Mahalaxmi Mandir,shree-mahalaxmi-mandir.jpg
+128,Sacred & Religious Sites,Ganesha Temple,ganesh-mandir.jpg
+129,Sacred & Religious Sites,"Saint Tukaram Gatha Mandir, Dehu Gaon, Pune",saint-tukaram-gatha-mandir.jpg
+130,Sacred & Religious Sites,Kasba Peth Ganpati Temple,kasbapeth-ganpati.jpg
+131,Sacred & Religious Sites,Dashbhuja Ganpati Temple,dashbhuja-ganpati-temple.jpg
+132,Sacred & Religious Sites,Gatha Temple,gatha-temple.jpg
+133,Sacred & Religious Sites,Gupt Bhimashankar,gupt-bhimashankar.jpg
+134,Shopping Malls,Phoenix Market City,pheonix_marketcity.jpg
+135,Shopping Malls,Amanora Mall,amanora_mall.jpg
+136,Shopping Malls,Seasons Mall,seasons_mall.jpg
+137,Shopping Malls,Sgs Mall,sgs_mall.jpg
+138,Shopping Malls,The Pavillion,the_pavillion.jpg
+139,Shopping Malls,Kumar Pacific Mall,kumar_pacific_mall.jpg
+140,Shopping Malls,Nitesh HUB - Shopping mall in Pune,nitesh_hub.jpg
+141,Shopping Malls,Ishanya Mall,ishanya_mall.jpg
+142,Shopping Malls,Inorbit Mall,inorbit_mall.jpg
+143,Shopping Malls,Jewel Square Mall,jewel_square_mall.jpg
+144,Shopping Malls,Royale Heritage Mall,royale_heritage_mall.jpg
+145,Shopping Malls,S Mall,s_mall.jpg
+146,Shopping Malls,Clover Center,clover_center.jpg
+147,Shopping Malls,Lifestyle Mall,lifestyle_mall.jpg
+148,Shopping Malls,Pune Central Mall,central_mall.jpg
+149,Shopping Malls,Gcorp Pulse Mall,gcorp_pulse_mall.jpg
+150,Shopping Malls,Westend Mall,WestendMall.jpg
+151,Shopping Malls,Nayana,spot-18-mall.jpg
+152,Shopping Malls,Spot 18 Mall,spot-18-mall.jpg
+153,Shopping Malls,Krome Mall,krome_mall.jpg
+154,Shopping Malls,Nucleus Mall,Nucleus_Mall.jpg
+155,Shopping Malls,Aditya Shagun Mall,aditya_shagun_mall.jpg
+156,Shopping Malls,Kakade Mall,kakade-mall.jpg
+157,Nature & Wildlife Areas,Taljai Hill,taljai_hill.jpg
+158,Nature & Wildlife Areas,Bhimashankar Wildlife Sanctuary,bhimashankar.jpg
+159,Nature & Wildlife Areas,Mayureshwar Wildlife Sanctuary,mayur-baug.jpg
+160,Nature & Wildlife Areas,Baner Hill,baner_hill.jpg
+161,Nature & Wildlife Areas,The Hidden Oasis,hidden_oasis.jpg
+162,Nature & Wildlife Areas,Talajai Hill,taljai_hill.jpg
+163,Nature & Wildlife Areas,Dr Salim Ali Bird Sanctuary,salimali_wildlife.jpg
+164,Nature & Wildlife Areas,Sahyadri Wildlife Sanctuary,sahyadri_wildlife.jpg
+165,Nature & Wildlife Areas,Shantivan,shantivan.jpg
+166,Nature & Wildlife Areas,Kavadi Pat,kavadi-pat.jpg
+167,Nature & Wildlife Areas,Mayur Baug,mayur-baug.jpg
+168,Gardens,Pune Okayama Friendship Garden,okayama_garden.jpg
+169,Gardens,Osho Teerth Park,osho_teerth_park.jpg
+170,Gardens,Empress Gardens,empress_garden.jpg
+171,Gardens,Mughal Garden,mughal_garden.jpg
+172,Gardens,Chittaranjan Vatika Garden,chittaranjan-vatika-garden.jpg
+173,Gardens,Pandit Bhimsen Joshi Udyan,pandit-bhimsen-joshi-udyan.jpg
+174,Gardens,Saras Garden,saras_garden.jpg
+175,Gardens,Sambhaji Park,Sambhaji_Garden.jpg
+176,Gardens,Bund Garden,bund_garden.jpg
+177,Gardens,Victoria Gardens (Jijamata Udyan),victoria_garden.jpg
+178,Museums,Darshan Museum,darshan_museum.jpg
+179,Museums,Raja Dinkar Kelkar Museum,raja-dinkar-kelkar-museum.jpg
+180,Museums,National War Museum,national_war_museum.jpg
+181,Museums,Joshi's Museum of Miniature Railways,joshi_museum.jpg
+182,Museums,Pune Tribal Museum,tribal-museum.jpg
+183,Museums,Blades of Glory Cricket Museum,cricket_museum
+184,Museums,Mahatma Phule Museum,mahatma-phule-museum.jpg
+185,Museums,Studio Kaleido,studio_kaleido.jpg
+186,Museums,Vikram Pendse Cycles,vikram-pendse-cycles.jpg
+187,Museums,Fire Brigade Museum,Fire_brigade_museum.jpeg
+188,Museums,Amazeum Children's Museum,amazeum_mueum.jpg
+189,Museums,Shivaji Maharaj Museum of Indian History,shivaji_maharaj_museum.jpg
+190,Museums,Art2Day Gallery,art2D_gallery.jpg
+191,Museums,Tilting Art Gallery,tiltin_art_gallery.jpg
+192,Museums,Ray Art Gallery,Ray_art_gallery.jpg
+193,Parks,Pune Okayama Friendship Garden,okayama_garden.jpg
+194,Parks,Gram Sanskruti Udyan Village Park,gram_sanskruti_udyan.jpg
+195,Parks,Osho Teerth Park,osho_teerth_park.jpg
+196,Parks,Koregaon Park,koregaon-park.jpg
+197,Parks,Kamla Nehru Park,kamala-nehru-park.jpg
+198,Parks,Seven Wonders Dream Park,seven_wonders_dream_park.jpg
+199,Parks,Joggers Park,jogger_park.jpg
+200,Parks,Pu La Deshpande Garden,pu-la-deshpande-garden.jpg
+201,Parks,Sambhaji Park,Sambhaji_Garden.jpg
+202,Shopping Malls,Pune Central Mall,central_mall.jpg
+203,Shopping Malls,Gcorp Pulse Mall,gcorp_pulse_mall.jpg
+204,Shopping Malls,Westend Mall,WestendMall.jpg
+205,Shopping Malls,Nayana,
+206,Shopping Malls,Spot 18 Mall,spot-18-mall.jpg
+207,Shopping Malls,Krome Mall,krome_mall.jpg
+208,Shopping Malls,Nucleus Mall,Nucleus_Mall.jpg
+209,Shopping Malls,Aditya Shagun Mall,aditya_shagun_mall.jpg
+210,Shopping Malls,Kakade Mall,kakade-mall.jpg
+211,Nature & Wildlife Areas,Taljai Hill,taljai_hill.jpg
+212,Nature & Wildlife Areas,Bhimashankar Wildlife Sanctuary,bhimashankar.jpg
+213,Nature & Wildlife Areas,Mayureshwar Wildlife Sanctuary,mayur-baug.jpg
+214,Nature & Wildlife Areas,Baner Hill,baner_hill.jpg
+215,Nature & Wildlife Areas,The Hidden Oasis,hidden_oasis.jpg
+216,Nature & Wildlife Areas,Talajai Hill,taljai_hill.jpg
+217,Nature & Wildlife Areas,Dr Salim Ali Bird Sanctuary,salimali_wildlife.jpg
+218,Nature & Wildlife Areas,Sahyadri Wildlife Sanctuary,sahyadri_wildlife.jpg
+219,Nature & Wildlife Areas,Shantivan,shantivan.jpg
+220,Nature & Wildlife Areas,Kavadi Pat,kavadi-pat.jpg
+221,Nature & Wildlife Areas,Mayur Baug,mayur-baug.jpg
+222,Gardens,Pune Okayama Friendship Garden,okayama_garden.jpg
+223,Gardens,Osho Teerth Park,osho_teerth_park.jpg
+224,Gardens,Empress Gardens,empress_garden.jpg
+225,Gardens,Mughal Garden,mughal_garden.jpg
+226,Gardens,Chittaranjan Vatika Garden,chittaranjan-vatika-garden.jpg
+227,Gardens,Pandit Bhimsen Joshi Udyan,pandit-bhimsen-joshi-udyan.jpg
+228,Gardens,Saras Garden,saras_garden.jpg
+229,Gardens,Sambhaji Park,Sambhaji_Garden.jpg
+230,Gardens,Bund Garden,bund_garden.jpg
+231,Gardens,Victoria Gardens (Jijamata Udyan),victoria_garden.jpg
+232,Museums,Darshan Museum,darshan_museum.jpg
+233,Museums,Raja Dinkar Kelkar Museum,raja-dinkar-kelkar-museum.jpg
+234,Museums,National War Museum,national_war_museum.jpg
+235,Museums,Joshi's Museum of Miniature Railways,joshi_museum.jpg
+236,Museums,Pune Tribal Museum,tribal-museum.jpg
+237,Museums,Blades of Glory Cricket Museum,cricket_museum
+238,Museums,Mahatma Phule Museum,mahatma-phule-museum.jpg
+239,Museums,Studio Kaleido,studio_kaleido.jpg
+240,Museums,Vikram Pendse Cycles,vikram-pendse-cycles.jpg
+241,Museums,Fire Brigade Museum,Fire_brigade_museum.jpeg
+242,Museums,Amazeum Children's Museum,amazeum_mueum.jpg
+243,Museums,Shivaji Maharaj Museum of Indian History,shivaji_maharaj_museum.jpg
+244,Museums,Art2Day Gallery,art2D_gallery.jpg
+245,Museums,Tilting Art Gallery,tiltin_art_gallery.jpg
+246,Museums,Ray Art Gallery,Ray_art_gallery.jpg
+247,Parks,Pune Okayama Friendship Garden,okayama_garden.jpg
+248,Parks,Gram Sanskruti Udyan Village Park,gram_sanskruti_udyan.jpg
+249,Parks,Osho Teerth Park,osho_teerth_park.jpg
+250,Parks,Koregaon Park,koregaon-park.jpg
+251,Parks,Kamla Nehru Park,kamala-nehru-park.jpg
+252,Parks,Seven Wonders Dream Park,seven_wonders_dream_park.jpg
+253,Parks,Joggers Park,jogger_park.jpg
+254,Parks,Pu La Deshpande Garden,pu-la-deshpande-garden.jpg
+255,Parks,Sambhaji Park,Sambhaji_Garden.jpg
+256,Bodies of Water,Pawna Lake,pawna_lake.jpg
+257,Bodies of Water,Lonavala Lake,lonavala_lake.jpg
+258,Bodies of Water,Pashan Lake,pashan_lake.jpg
+259,Bodies of Water,Pavna River,pavana_river.jpg
+260,Bodies of Water,Katraj Lake,katraj-lake.jpg
+261,Bodies of Water,Jambhulwadi Lake,jambhulwadi-lake.jpg
+262,Bodies of Water,Hanuman Lake,Hanuman-Lake.jpg
+263,Bodies of Water,Krishna River,krishna-river.jpg
+264,Bodies of Water,Mula Mutha River,mula_river.jpg
+265,Water & Amusement Parks,Skyjumper Trampoline Park - Pune,skyjumper_trampolin_park.jpg
+266,Water & Amusement Parks,Meher Retreat,meher-retreat.jpeg
+267,Water & Amusement Parks,Sentosa Water Park,santosh_waterpark.jpg
+268,Water & Amusement Parks,Junglehood,junglehood.jpg
+269,Water & Amusement Parks,Manas Holiday Resorts,Manas-Resort.jpg
+270,Water & Amusement Parks,Rajgad Waterpark,rajgad_waterpark.jpg
+271,Water & Amusement Parks,Krushnai Water World,krushnai_water_world.jpg
+272,Water & Amusement Parks,Appu Ghar Amusement Park,appu-ghar-amusment-pune.jpg
+273,Water & Amusement Parks,Krushnai Water Park,krushnai-water-park-pune.jpg
+274,Water & Amusement Parks,"Diamond Parks - Water, Adventure & Camping",diamond_water-parks.jpg
